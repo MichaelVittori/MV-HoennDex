@@ -1,0 +1,103 @@
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-color: #333333;
+    color: #f2f2f2;
+    font-family: "Arial", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.pokemon-grid { /* Use display grid */
+    display: grid;
+    grid-template-columns: repeat(9, minmax(200px, 1fr));
+    grid-gap: 6px; /* Fixed size */
+}
+
+.pokemon-details {
+    background-color: #212121;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.pokemon-container {
+    width: 150px;
+    height: 169px;
+    margin: 10px;
+    background-color: #212121;
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-in-out; /* Makes the transform animations below much smoother */
+}
+
+.pokemon-container:hover { /* Pseudo classes 1 and 2 */
+    transform: scale(1.1);
+}
+
+.pokemon-container:active {
+    transform: scale(0.9);
+}
+
+.pokemon-container frame{
+    align-items: center;
+    background-color: #333333;
+    border-radius: 10px;
+    height: 80%; /* Relative Size */
+    width: 80%;
+    justify-content: center;
+}
+
+.pokemon-container-img {
+    margin-left: 10px;
+    height: 100px;
+    width: 100px;
+    z-index: 1; /* Use z-index to raise above the frame */
+}
+
+.pokemon-container p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.table-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: #3944BC;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover { /* 2 more pseudo classes just to make sure */
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}
