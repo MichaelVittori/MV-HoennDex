@@ -12,16 +12,6 @@ const LandingPage = ({ handleShowPokedex }) => {
                 <p>Click below to see all the new Pokemon of this Generation (Load time ~8-10 seconds):</p>
                 <button onClick={handleShowPokedex}>Show Pokedex</button>
                 <p>I chose to only do these Pokemon mainly because loading all 1,000+ Pokemon they have now was taking forever and this is my favorite generation.</p>
-                <p>Technologies Used:</p>
-                <ul>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Express</li>
-                    <li>Firebase</li>
-                </ul>
             </div>
         </div>
     );
