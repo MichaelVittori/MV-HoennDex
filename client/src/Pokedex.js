@@ -88,7 +88,7 @@ const Pokedex = ({ handleBack }) => {
                 <div className="pokemon-name-container">
                     <p>{pokemon.name}</p>
                     <p>
-                        {pokemon.secondaryType !== "None" && ` / ${pokemon.secondaryType}`}
+                        {pokemon.primaryType} {pokemon.secondaryType !== "None" && ` / ${pokemon.secondaryType}`}
                     </p>
                 </div>
             </div>
